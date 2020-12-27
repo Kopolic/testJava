@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ControllerSelectCourses">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="410.0">
+         <children>
+            <Text layoutX="153.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите предмет" />
+            <Button fx:id="buttonBusiness" layoutX="178.0" layoutY="93.0" mnemonicParsing="false" onAction="#business" text="Бизнес" />
+            <Button fx:id="buttonJava" layoutX="23.0" layoutY="150.0" mnemonicParsing="false" onAction="#java" text="Объектно-ориентированное программирование на языке Java" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

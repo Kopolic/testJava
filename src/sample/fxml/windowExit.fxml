@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="477.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ControllerWindowExit">
+   <children>
+      <Text layoutX="20.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Вы не сохранили изменения! Все равно выйти?">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Button fx:id="no" layoutX="104.0" layoutY="53.0" mnemonicParsing="false" onAction="#no" text="Отмена" />
+      <Button fx:id="exit" layoutX="303.0" layoutY="53.0" mnemonicParsing="false" onAction="#exit" text="Выйти" />
+   </children>
+</Pane>
