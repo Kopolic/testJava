@@ -24,10 +24,10 @@
       <Text layoutX="42.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2020-06-11" />
       <TextField fx:id="txtA4" layoutX="113.0" layoutY="343.0" onKeyPressed="#keyPressed" prefHeight="25.0" prefWidth="40.0" />
       <Text layoutX="168.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Если не хотите изменять оценку то поле можно оставить пустым" wrappingWidth="79.34765625" />
-      <Button layoutX="220.0" layoutY="386.0" mnemonicParsing="false" onAction="#save" text="Сохранить" />
-      <Button fx:id="exit" layoutX="302.0" layoutY="386.0" mnemonicParsing="false" onAction="#exit" text="Выйти" />
+      <Button layoutX="219.0" layoutY="374.0" mnemonicParsing="false" onAction="#save" text="Сохранить" />
+      <Button fx:id="exit" layoutX="301.0" layoutY="374.0" mnemonicParsing="false" onAction="#exit" text="Выйти" />
       <Text fx:id="textSelected" fill="RED" layoutX="293.0" layoutY="262.0" stroke="#4a0000" strokeType="OUTSIDE" strokeWidth="0.3" wrappingWidth="67.919921875" />
-      <Button fx:id="goBack" layoutX="20.0" layoutY="386.0" mnemonicParsing="false" onAction="#back" text="Вернуться назад" />
+      <Button fx:id="goBack" layoutX="20.0" layoutY="374.0" mnemonicParsing="false" onAction="#back" text="Вернуться назад" />
       <Label fx:id="nameTable" layoutX="163.0" layoutY="14.0" />
       <Label fx:id="nameTable1" layoutX="14.0" layoutY="14.0" />
    </children>

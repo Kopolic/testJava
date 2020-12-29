@@ -10,7 +10,7 @@
           <Menu mnemonicParsing="false" text="File">
             <items>
               <MenuItem mnemonicParsing="false" onAction="#export" text="Export" />
-                  <MenuItem fx:id="menuExit" mnemonicParsing="false" onAction="#exit" text="Exit" />
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
             </items>
           </Menu>
         </menus>
