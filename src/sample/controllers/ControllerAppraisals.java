@@ -103,6 +103,7 @@ public class ControllerAppraisals {
     }
     @FXML
     public void save(){
+        textSelected.setText("");
         if (id >= 2) {
             bool = true;
             textSelected.setText("");
@@ -143,6 +144,10 @@ public class ControllerAppraisals {
     }
     @FXML
     public void exit(){
+        a1 = txtA1.getText();
+        a2 = txtA2.getText();
+        a3 = txtA3.getText();
+        a4 = txtA4.getText();
         if (a1.isEmpty() && a2.isEmpty() && a3.isEmpty() && a4.isEmpty() || bool) {
             exit.getScene().getWindow().hide();
         } else {
