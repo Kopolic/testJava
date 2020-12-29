@@ -16,13 +16,13 @@
         </columns>
       </TableView>
       <Text layoutX="42.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2020-06-08" />
-      <TextField fx:id="txtA1" layoutX="113.0" layoutY="245.0" prefHeight="25.0" prefWidth="40.0" />
+      <TextField fx:id="txtA1" layoutX="113.0" layoutY="245.0" onKeyPressed="#keyPressed" prefHeight="25.0" prefWidth="40.0" />
       <Text layoutX="42.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2020-06-09" />
-      <TextField fx:id="txtA2" layoutX="113.0" layoutY="274.0" prefHeight="25.0" prefWidth="40.0" />
+      <TextField fx:id="txtA2" layoutX="113.0" layoutY="274.0" onKeyPressed="#keyPressed" prefHeight="25.0" prefWidth="40.0" />
       <Text layoutX="42.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2020-06-10" />
-      <TextField fx:id="txtA3" layoutX="113.0" layoutY="310.0" prefHeight="25.0" prefWidth="40.0" />
+      <TextField fx:id="txtA3" layoutX="113.0" layoutY="310.0" onKeyPressed="#keyPressed" prefHeight="25.0" prefWidth="40.0" />
       <Text layoutX="42.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2020-06-11" />
-      <TextField fx:id="txtA4" layoutX="113.0" layoutY="343.0" prefHeight="25.0" prefWidth="40.0" />
+      <TextField fx:id="txtA4" layoutX="113.0" layoutY="343.0" onKeyPressed="#keyPressed" prefHeight="25.0" prefWidth="40.0" />
       <Text layoutX="168.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Если не хотите изменять оценку то поле можно оставить пустым" wrappingWidth="79.34765625" />
       <Button layoutX="220.0" layoutY="386.0" mnemonicParsing="false" onAction="#save" text="Сохранить" />
       <Button fx:id="exit" layoutX="302.0" layoutY="386.0" mnemonicParsing="false" onAction="#exit" text="Выйти" />

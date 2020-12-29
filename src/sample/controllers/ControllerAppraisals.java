@@ -32,7 +32,7 @@ public class ControllerAppraisals {
     String a4 = "";
     String name = "";
     int id;
-    boolean bool = true;
+    static boolean bool = true;
 
     @FXML
     public TableView<Students> tableView;
@@ -100,6 +100,13 @@ public class ControllerAppraisals {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+    }
+    @FXML
+    public void keyPressed(){
+        ControllerMenu.txtA1 = txtA1;
+        ControllerMenu.txtA2 = txtA2;
+        ControllerMenu.txtA3 = txtA3;
+        ControllerMenu.txtA4 = txtA4;
     }
     @FXML
     public void save(){
