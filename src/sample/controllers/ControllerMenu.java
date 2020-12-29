@@ -25,14 +25,10 @@ public class ControllerMenu {
         conn = ConnectionUtil.conDB();
     }
     String tableName = ControllerSelectCourses.tableChange;
-    String a1 = "";
-    String a2 = "";
-    String a3 = "";
-    String a4 = "";
-    static TextField txtA1;
-    static TextField txtA2;
-    static TextField txtA3;
-    static TextField txtA4;
+    static String a1 = "";
+    static String a2 = "";
+    static String a3 = "";
+    static String a4 = "";
 
     @FXML
     public BorderPane pane;
@@ -67,10 +63,6 @@ public class ControllerMenu {
     }
     @FXML
     public void exit (){
-        a1 = txtA1.getText();
-        a2 = txtA2.getText();
-        a3 = txtA3.getText();
-        a4 = txtA4.getText();
         if (a1.isEmpty() && a2.isEmpty() && a3.isEmpty() && a4.isEmpty() || ControllerAppraisals.bool) {
             pane.getScene().getWindow().hide();
         } else {

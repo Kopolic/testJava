@@ -103,10 +103,10 @@ public class ControllerAppraisals {
     }
     @FXML
     public void keyPressed(){
-        ControllerMenu.txtA1 = txtA1;
-        ControllerMenu.txtA2 = txtA2;
-        ControllerMenu.txtA3 = txtA3;
-        ControllerMenu.txtA4 = txtA4;
+        ControllerMenu.a1 = txtA1.getText();
+        ControllerMenu.a2 = txtA2.getText();
+        ControllerMenu.a3 = txtA3.getText();
+        ControllerMenu.a4 = txtA4.getText();
     }
     @FXML
     public void save(){
