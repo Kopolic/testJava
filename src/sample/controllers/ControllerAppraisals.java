@@ -6,14 +6,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import sample.ConnectionUtil;
@@ -66,9 +60,20 @@ public class ControllerAppraisals {
     public Button exit;
     @FXML
     public Button goBack;
+    @FXML
+    public Label nameTable;
+    @FXML
+    public Label nameTable1;
 
     @FXML
     void initialize(){
+        if (tableName.equals(ConnectionUtil.JAVA)){
+            nameTable1.setText("Объектно-ориентированное программирование на языке Java");
+            nameTable.setText("");
+        }else {
+            nameTable.setText("Бизнес");
+            nameTable1.setText("");
+        }
         try {
             String sql = "select * from " + tableName;
             PreparedStatement statement = conn.prepareStatement(sql);
