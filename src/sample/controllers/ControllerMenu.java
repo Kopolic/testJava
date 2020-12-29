@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import sample.ConnectionUtil;
 import sample.Students;
 import java.io.File;
@@ -56,6 +57,11 @@ public class ControllerMenu {
                 fw.write(students.toString());
             }
             fw.close();
+            Stage primaryStage = new Stage();
+            Parent root = FXMLLoader.load(getClass().getResource("/sample/fxml/export.fxml"));
+            primaryStage.setTitle("Успешно");
+            primaryStage.setScene(new Scene(root));
+            primaryStage.show();
         } catch (SQLException | IOException throwables) {
             throwables.printStackTrace();
         }
